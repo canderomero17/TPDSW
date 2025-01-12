@@ -2,6 +2,9 @@ function addToCart() {
     var myModal = new bootstrap.Modal(document.getElementById('productAddedModal'));
     myModal.show();
 }
+
+window.addToCart = addToCart;
+
 const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]');
 const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl));
 
