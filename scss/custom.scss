@@ -1,0 +1,194 @@
+@import "../node_modules/bootstrap/scss/bootstrap";
+
+$primary: #d3a973; 
+$secondary: #000000;
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+h1 {
+  color: $primary;
+}
+
+.banner-container {
+    position: relative;
+    background-color: $primary;
+    height: 60px;
+  }
+
+.header-height {
+    height: 60px;
+}
+  
+.icons a {
+    font-size: 1.5rem;
+    text-decoration: none;
+}
+  
+.navbar{
+    background-color: white !important;
+    z-index: 10;
+    border-bottom: 1px solid gray;
+}
+
+  
+@media (min-width: 768px) {
+    .margin-md {
+        margin-top: 25px !important;
+      }
+}    
+
+.container {
+    margin-left: 6px;
+}
+
+.nav-item{
+    font-size: 14px;
+}
+
+@media (max-width: 768px) {
+    .carousel-inner {
+        width: 260px;
+      }
+}
+
+@media (min-width: 962px) {
+    .carousel-inner {
+        width: 900px;
+      }
+}
+
+  
+.btn-custom {
+    background-color: white; 
+    color: $secondary;
+    border-radius: 5px;
+    border: solid 1px;
+    padding-top: 9px;
+    padding-bottom: 9px;
+    padding-left: 16px;
+    padding-right: 16px;
+    font-size: 12px;
+    &:hover {
+      background-color: $primary; 
+    }
+}
+
+.modal-content {
+    border: solid 1px $primary;
+}
+
+.modal-header {
+    border-bottom: solid 1px $primary;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    top: initial ; 
+    bottom: initial ;
+    height: 350px;
+    width: 10% !important;
+
+    @media (min-width: 767px) {
+        width: 15px;
+        top: 190px;
+        bottom: 0;
+      }
+
+    @media (min-width: 1024px) {
+           width: 5%;        
+      }
+}
+
+.height-mascara {
+    top: 695px;
+}
+
+.carousel-control-prev {
+    padding-left: 6px;
+}
+
+.card-title {
+    font-weight: 700;
+    font-size: medium;
+    margin-bottom: 0;
+}
+
+.subtitulo {
+    font-weight: 200;
+}
+
+.card-text {
+    color: $primary;
+    font-weight: 600;
+}
+
+.card-img {
+    height: 200px;
+    width: 200px;
+    margin: auto;
+}
+
+.footer {
+    background-color: $primary;
+}
+
+.footer hr {
+    width: 80%;
+    margin: auto;
+    color: $secondary;
+    border-color: $secondary;
+}
+
+.bi {
+    font-size: 20px;
+}
+
+@media (min-width: 768px) { 
+    .bi {
+      font-size: 2rem;
+    }
+}
+
+footer p{
+    font-size: 14px;
+}
+
+.datos {
+    font-weight: 600;
+    color: rgb(109, 109, 109);
+}
+
+.position-md {
+    @media (min-width: 767px) {
+        margin-top: 55px;
+    }
+}
+
+.size {
+    height: 80px;
+    width: 80px;
+
+    @media (min-width: 767px) {
+        height: 130px;
+        width: 130px;
+    }
+
+    @media (min-width: 1024px) {
+        height: 200px;
+        width: 200px;
+    }
+}
+
+.tooltip .tooltip-arrow {
+    display: none; 
+  }
+
+a {
+    text-decoration: none; 
+}
+  
+a::after, a::before {
+    content: none !important; 
+}

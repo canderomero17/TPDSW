@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CANDELA MAKEUP | Tienda Online de Maquillaje</title>
+  <meta name="description" content="Tienda online de maquillaje con productos destacados.">
+  <meta name="keywords" content="maquillaje, makeup, gloss, mascaras de pestañas, productos belleza">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/style.css">  
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet"> 
+</head>
+
+<body>
+    <header class="banner-container">
+        <div class="d-flex header-height">
+            <div class="d-flex align-items-center w-100 justify-content-between px-4">
+                <button class="navbar-toggler d-block d-md-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" 
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Abrir menú de navegación">
+                    <i class="bi bi-list text-dark"></i>
+                </button>      
+                <i class="bi bi-eye me-2 d-none d-md-block"></i> 
+                <h1 class="m-0 fw-bold text-black text-center d-none d-md-block">CANDELA MAKEUP</h1>
+                <span class="m-0 fw-bold text-black text-center d-block d-md-none">CANDELA MAKEUP</span>
+                <div>
+                    <a href="#" class="text-black me-3" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Mis favoritos" aria-label="Mis favoritos">
+                        <i class="bi bi-heart"></i>
+                    </a>
+                    <a href="#" class="text-black me-3" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Mi carrito" aria-label="Mi carrito">
+                        <i class="bi bi-cart"></i>
+                    </a>
+                    <a href="/perfil.html" class="text-black" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Mi perfil" aria-label="Mi perfil">
+                        <i class="bi bi-person"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+  
+            <nav class="p-0 navbar navbar-expand-md py-md-2 navbar-light bg-light">
+                <div class="container">
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav">
+                            <li class="nav-item"><a class="nav-link" href="#">BASES</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#">GLOSS</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#">LABIALES</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#">MÁSCARAS DE PESTAÑAS</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#">SOMBRAS</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#">RUBORES</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+    <section class="container py-5 m-auto margin-md" >
+        <h2 class="text-center mb-4 fw-bold">GLOSS</h2>
+  
+        <!-- Carrusel para mobile -->
+        <div class="d-flex justify-content-center">
+            <div id="glossCarouselMobile" class="carousel slide d-md-none" data-bs-ride="carousel">
+                <div class="carousel-inner">
+            
+                    <div class="carousel-item active">
+                        <div class="card text-center">
+                            <img src="img/lifterGlossMaybelline.webp" class="card-img" alt="Maybelline Lifter Gloss" loading="lazy">
+                            <div class="card-body">
+                            <h5 class="card-title">MAYBELLINE</h5>
+                            <h6 class="card-title subtitulo">LIFTER GLOSS</h6>
+                            <p class="card-text">$ 20.000</p>
+                            <button class="btn btn-custom" onclick="addToCart()" aria-label="Agregar producto al carrito">AGREGAR AL CARRITO</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item">
+                        <div class="card text-center">
+                            <img src="img/ohMyGlossRimmel.webp" class="card-img" alt="Rimmel Oh My Gloss" loading="lazy">
+                            <div class="card-body">
+                            <h5 class="card-title">RIMMEL</h5>
+                            <h6 class="card-title subtitulo">OH MY GLOSS!</h6>
+                            <p class="card-text">$ 10.000</p>
+                            <button class="btn btn-custom" onclick="addToCart()" aria-label="Agregar producto al carrito">AGREGAR AL CARRITO</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item">
+                        <div class="card text-center">
+                            <img src="img/glossyGlossExtreme.webp" class="card-img" alt="Extreme Glossy Gloss" loading="lazy">
+                            <div class="card-body">
+                            <h5 class="card-title">EXTREME</h5>
+                            <h6 class="card-title subtitulo">GLOSSY GLOSS</h6>
+                            <p class="card-text">$ 15.000</p>
+                            <button class="btn btn-custom" onclick="addToCart()" aria-label="Agregar producto al carrito">AGREGAR AL CARRITO</button>
+                            </div>
+                        </div>
+                    </div>
+                
+                    <div class="carousel-item">
+                        <div class="card text-center">
+                            <img src="img/ohMyGlossRimmerOil.webp" class="card-img" alt="Rimmel Lip Oil" loading="lazy">
+                            <div class="card-body">
+                            <h5 class="card-title">RIMMEL</h5>
+                            <h6 class="card-title subtitulo">LIP OIL</h6>
+                            <p class="card-text">$ 11.000</p>
+                            <button class="btn btn-custom" onclick="addToCart()" aria-label="Agregar producto al carrito">AGREGAR AL CARRITO</button>
+                            </div>
+                        </div>
+                    </div>
+             
+                    <div class="carousel-item">
+                        <div class="card text-center">
+                            <img src="img/plumpRimmel.webp" class="card-img" alt="Rimmel Pump Gloss" loading="lazy">
+                            <div class="card-body">
+                            <h5 class="card-title">RIMMEL</h5>
+                            <h6 class="card-title subtitulo">PLUMP GLOSS</h6>
+                            <p class="card-text">$ 12.000</p>
+                            <button class="btn btn-custom" onclick="addToCart()" aria-label="Agregar producto al carrito">AGREGAR AL CARRITO</button>
+                            </div>
+                        </div>
+                    </div>
+             
+                    <div class="carousel-item">
+                        <div class="card text-center">
+                            <img src="img/liquidoMaybelline.webp" class="card-img" alt="Maybelline Super Stay" loading="lazy">
+                            <div class="card-body">
+                            <h5 class="card-title">MAYBELLINE</h5>
+                            <h6 class="card-title subtitulo">SUPER STAY 24HS</h6>
+                            <p class="card-text">$ 14.000</p>
+                            <button class="btn btn-custom" onclick="addToCart()" aria-label="Agregar producto al carrito">AGREGAR AL CARRITO</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <button class="d-md-none carousel-control-prev" type="button" data-bs-target="#glossCarouselMobile" data-bs-slide="prev">
+                <i class="bi bi-chevron-left fs-3 text-dark"></i> 
+            </button>
+            <button class="d-md-none carousel-control-next" type="button" data-bs-target="#glossCarouselMobile" data-bs-slide="next">
+                <i class="bi bi-chevron-right fs-3 text-dark"></i> 
+            </button> 
+    
+        <!-- Carrusel para escritorio -->
+        <div id="glossCarouselDesktop" class="carousel slide d-none d-md-block" data-bs-ride="carousel">
+        <div class="carousel-inner">
+
+            <div class="carousel-item active">
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="card text-center">
+                            <img src="img/lifterGlossMaybelline.webp" class="card-img" alt="Maybelline Lifter Gloss" loading="lazy">
+                            <div class="card-body">
+                                <h5 class="card-title">MAYBELLINE</h5>
+                                <h6 class="card-title subtitulo">LIFTER GLOSS</h6>
+                                <p class="card-text">$ 20.000</p>
+                                <button class="btn btn-custom" onclick="addToCart()" aria-label="Agregar producto al carrito">AGREGAR AL CARRITO</button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-4">
+                        <div class="card text-center">
+                            <img src="img/ohMyGlossRimmel.webp" class="card-img" alt="Rimmel Oh My Gloss" loading="lazy">
+                            <div class="card-body">
+                                <h5 class="card-title">RIMMEL</h5>
+                                <h6 class="card-title subtitulo">OH MY GLOSS!</h6>
+                                <p class="card-text">$ 10.000</p>
+                                <button class="btn btn-custom" onclick="addToCart()" aria-label="Agregar producto al carrito">AGREGAR AL CARRITO</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="card text-center">
+                            <img src="img/glossyGlossExtreme.webp" class="card-img" alt="Extreme Glossy Gloss" loading="lazy">
+                            <div class="card-body">
+                                <h5 class="card-title">EXTREME</h5>
+                                <h6 class="card-title subtitulo">GLOSSY GLOSS</h6>
+                                <p class="card-text">$ 15.000</p>
+                                <button class="btn btn-custom" onclick="addToCart()" aria-label="Agregar producto al carrito">AGREGAR AL CARRITO</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="carousel-item">
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="card text-center">
+                            <img src="img/ohMyGlossRimmerOil.webp" class="card-img" alt="Rimmel Lip Oil" loading="lazy">
+                            <div class="card-body">
+                                <h5 class="card-title">RIMMEL</h5>
+                                <h6 class="card-title subtitulo">LIP OIL</h6>
+                                <p class="card-text">$ 11.000</p>
+                                <button class="btn btn-custom" onclick="addToCart()" aria-label="Agregar producto al carrito">AGREGAR AL CARRITO</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="card text-center">
+                            <img src="img/plumpRimmel.webp" class="card-img" alt="Rimmel Pump Gloss" loading="lazy">
+                            <div class="card-body">
+                                <h5 class="card-title">RIMMEL</h5>
+                                <h6 class="card-title subtitulo">PLUMP GLOSS</h6>
+                                <p class="card-text">$ 12.000</p>
+                                <button class="btn btn-custom" onclick="addToCart()" aria-label="Agregar producto al carrito">AGREGAR AL CARRITO</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="card text-center">
+                            <img src="img/liquidoMaybelline.webp" class="card-img" alt="Maybelline Super Stay" loading="lazy">
+                            <div class="card-body">
+                                <h5 class="card-title">MAYBELLINE</h5>
+                                <h6 class="card-title subtitulo">SUPER STAY 24HS</h6>
+                                <p class="card-text">$ 14.000</p>
+                                <button class="btn btn-custom" onclick="addToCart()" aria-label="Agregar producto al carrito">AGREGAR AL CARRITO</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+        </div>
+
+        <button class="d-none d-md-flex carousel-control-prev" type="button" data-bs-target="#glossCarouselDesktop" data-bs-slide="prev">
+            <i class="bi bi-chevron-left fs-3 text-dark"></i>   
+        </button> 
+        <button class="d-none d-md-flex carousel-control-next" type="button" data-bs-target="#glossCarouselDesktop" data-bs-slide="next">
+            <i class="bi bi-chevron-right fs-3 text-dark"></i> 
+        </button>
+    
+    </section>
+
+    <section class="container py-5 m-auto">
+        <h2 class="text-center mb-4 fw-bold">MÁSCARA DE PESTAÑAS</h2>
+  
+    <!-- Carrusel para móvil -->
+    <div class="d-flex justify-content-center">
+        <div id="mascaraCarouselMobile" class="carousel slide d-md-none" data-bs-ride="carousel">
+            <div class="carousel-inner">
+
+                <div class="carousel-item active">
+                    <div class="card text-center">
+                        <img src="img/lorealParisMascara.webp" class="card-img" alt="Loreal Paris Mascara" loading="lazy">
+                        <div class="card-body">
+                            <h5 class="card-title">L'OREAL PARIS</h5>
+                            <h6 class="card-title subtitulo">MÁSCARA DE PESTAÑAS</h6>
+                            <p class="card-text">$ 30.000</p>
+                            <button class="btn btn-custom" onclick="addToCart()" aria-label="Agregar producto al carrito">AGREGAR AL CARRITO</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="carousel-item">
+                    <div class="card text-center">
+                        <img src="img/skyHighMaybelline.webp" class="card-img" alt="Maybelline Sky High" loading="lazy">
+                        <div class="card-body">
+                            <h5 class="card-title">MAYBELLINE</h5>
+                            <h6 class="card-title subtitulo">SKY HIGH</h6>
+                            <p class="card-text">$ 30.000</p>
+                            <button class="btn btn-custom" onclick="addToCart()" aria-label="Agregar producto al carrito">AGREGAR AL CARRITO</button>
+                        </div>
+                    </div>
+                </div>
+         
+                <div class="carousel-item">
+                    <div class="card text-center">
+                        <img src="img/extremeWonderEyes.webp" class="card-img" alt="Extreme Wonder Eyes" loading="lazy">
+                        <div class="card-body">
+                            <h5 class="card-title">EXTREME</h5>
+                            <h6 class="card-title subtitulo">WONDER EYES</h6>
+                            <p class="card-text">$ 15.000</p>
+                            <button class="btn btn-custom" onclick="addToCart()" aria-label="Agregar producto al carrito">AGREGAR AL CARRITO</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="carousel-item">
+                    <div class="card text-center">
+                        <img src="img/extremeColor.webp" class="card-img" alt="Extreme Color" loading="lazy">
+                        <div class="card-body">
+                            <h5 class="card-title">EXTREME</h5>
+                            <h6 class="card-title subtitulo">COLOR FESTIVAL</h6>
+                            <p class="card-text">$ 10.000</p>
+                            <button class="btn btn-custom" onclick="addToCart()" aria-label="Agregar producto al carrito">AGREGAR AL CARRITO</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="carousel-item">
+                    <div class="card text-center">
+                        <img src="img/wonderLuxe.webp" class="card-img" alt="Rimmel Wonder Luxe" loading="lazy">
+                        <div class="card-body">
+                            <h5 class="card-title">RIMMEL</h5>
+                            <h6 class="card-title subtitulo">WONDER LUXE</h6>
+                            <p class="card-text">$ 16.000</p>
+                            <button class="btn btn-custom" onclick="addToCart()" aria-label="Agregar producto al carrito">AGREGAR AL CARRITO</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="carousel-item">
+                    <div class="card text-center">
+                        <img src="img/waterproofRimmel.webp" class="card-img" alt="Rimmel Waterproof" loading="lazy">
+                        <div class="card-body">
+                            <h5 class="card-title">RIMMEL</h5>
+                            <h6 class="card-title subtitulo">WATERPROOF</h6>
+                            <p class="card-text">$ 10.000</p>
+                            <button class="btn btn-custom" onclick="addToCart()" aria-label="Agregar producto al carrito">AGREGAR AL CARRITO</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+  
+      <button class="d-md-none carousel-control-prev" type="button" data-bs-target="#mascaraCarouselMobile" data-bs-slide="prev">
+        <i class="bi bi-chevron-left fs-3 text-dark"></i>   
+      </button>
+      <button class="d-md-none carousel-control-next" type="button" data-bs-target="#mascaraCarouselMobile" data-bs-slide="next">
+        <i class="bi bi-chevron-right fs-3 text-dark"></i> 
+      </button> 
+    
+  
+    <!-- Carrusel para escritorio -->
+    <div id="mascaraCarouselDesktop" class="carousel slide d-none d-md-block" data-bs-ride="carousel">
+        <div class="carousel-inner">
+
+        <div class="carousel-item active">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card text-center">
+                        <img src="img/lorealParisMascara.webp" class="card-img" alt="Loreal Paris Mascara" loading="lazy">
+                        <div class="card-body">
+                            <h5 class="card-title">L'OREAL PARIS</h5>
+                            <h6 class="card-title subtitulo">MÁSCARA DE PESTAÑAS</h6>
+                            <p class="card-text">$ 30.000</p>
+                            <button class="btn btn-custom" onclick="addToCart()" aria-label="Agregar producto al carrito">AGREGAR AL CARRITO</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="card text-center">
+                        <img src="img/skyHighMaybelline.webp" class="card-img" alt="Maybelline Sky High" loading="lazy">
+                        <div class="card-body">
+                            <h5 class="card-title">MAYBELLINE</h5>
+                            <h6 class="card-title subtitulo">SKY HIGH</h6>
+                            <p class="card-text">$ 30.000</p>
+                            <button class="btn btn-custom" onclick="addToCart()" aria-label="Agregar producto al carrito">AGREGAR AL CARRITO</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="card text-center">
+                        <img src="img/extremeWonderEyes.webp" class="card-img" alt="Extreme Wonder Eyes" loading="lazy">
+                        <div class="card-body">
+                            <h5 class="card-title">EXTREME</h5>
+                            <h6 class="card-title subtitulo">WONDER EYES</h6>
+                            <p class="card-text">$ 15.000</p>
+                            <button class="btn btn-custom" onclick="addToCart()" aria-label="Agregar producto al carrito">AGREGAR AL CARRITO</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+  
+        <div class="carousel-item">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card text-center">
+                        <img src="img/extremeColor.webp" class="card-img" alt="Extreme Color" loading="lazy">
+                        <div class="card-body">
+                            <h5 class="card-title">EXTREME</h5>
+                            <h6 class="card-title subtitulo">COLOR FESTIVAL</h6>
+                            <p class="card-text">$ 10.000</p>
+                            <button class="btn btn-custom" onclick="addToCart()" aria-label="Agregar producto al carrito">AGREGAR AL CARRITO</button>
+                        </div>
+                    </div>
+                </div>
+            <div class="col-md-4">
+                <div class="card text-center">
+                    <img src="img/wonderLuxe.webp" class="card-img" alt="Rimmel Wonder Luxe" loading="lazy">
+                    <div class="card-body">
+                        <h5 class="card-title">RIMMEL</h5>
+                        <h6 class="card-title subtitulo">WONDER LUXE</h6>
+                        <p class="card-text">$ 16.000</p>
+                        <button class="btn btn-custom" onclick="addToCart()" aria-label="Agregar producto al carrito">AGREGAR AL CARRITO</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card text-center">
+                    <img src="img/waterproofRimmel.webp" class="card-img" alt="Rimmel Waterproof" loading="lazy">
+                    <div class="card-body">
+                        <h5 class="card-title">RIMMEL</h5>
+                        <h6 class="card-title subtitulo">WATERPROOF</h6>
+                        <p class="card-text">$ 10.000</p>
+                        <button class="btn btn-custom" onclick="addToCart()" aria-label="Agregar producto al carrito">AGREGAR AL CARRITO</button>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </div>
+        </div>
+    </div>
+    </div>
+
+    <button class="d-none d-md-flex carousel-control-prev height-mascara" type="button" data-bs-target="#mascaraCarouselDesktop" data-bs-slide="prev">
+        <i class="bi bi-chevron-left fs-3 text-dark"></i>   
+    </button>
+    <button class="d-none d-md-flex carousel-control-next height-mascara" type="button" data-bs-target="#mascaraCarouselDesktop" data-bs-slide="next">
+        <i class="bi bi-chevron-right fs-3 text-dark"></i> 
+    </button>
+    
+</section>
+</main>
+
+    <div class="modal fade" id="productAddedModal" tabindex="-1" aria-labelledby="productAddedModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="productAddedModalLabel">¡Producto agregado al carrito exitosamente!</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body d-flex justify-content-center">
+                    <button type="button" class="btn btn-custom" data-bs-dismiss="modal">CERRAR</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer text-center py-4">
+        <hr class="mb-4" />
+        <div class="mb-3">
+        <a href="#" class="text-dark me-5" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+        <a href="#" class="text-dark me-5" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+        <a href="#" class="text-dark" aria-label="Whatsapp"><i class="bi bi-whatsapp"></i></a>
+        </div>
+        <p class="mb-0">
+            © 2020 - 2030 | <a href="#" class="text-decoration-none text-dark">Privacy</a> - <a href="#" class="text-decoration-none text-dark">Terms</a>
+        </p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script src="/js/script.js"></script>
+</body>
+</html>
